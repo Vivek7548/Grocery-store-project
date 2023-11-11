@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Store Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h3 class="mb-4">
+            <u>General Store Dashboard</u></h3>
+
+        <div class="form-group">
+            <label for="itemName">Item Name:</label>
+            <input type="text" class="form-control" id="itemName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="itemDescription">Description:</label>
+            <input type="text" class="form-control" id="itemDescription" required>
+        </div>
+
+        <div class="form-group">
+            <label for="itemPrice">Price:</label>
+            <input type="number" class="form-control" id="itemPrice" required>
+        </div>
+
+        <div class="form-group">
+            <label for="itemQuantity">Quantity:</label>
+            <input type="number" class="form-control" id="itemQuantity" required>
+        </div>
+
+        <button class="btn btn-primary" id="addItemBtn">Add Item</button>
+    </div>
+
+    <div id="itemDetails" class="container mt-4">
+        <!-- Item details will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
